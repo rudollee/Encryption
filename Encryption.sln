@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encryption", "Encryption\Encryption.csproj", "{ED031A70-570F-4599-AC04-0453A997A6A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encryption.Example", "Encryption.Example\Encryption.Example.csproj", "{78410A07-457D-4CDD-B5BA-C2FA8C663689}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{ED031A70-570F-4599-AC04-0453A997A6A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED031A70-570F-4599-AC04-0453A997A6A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED031A70-570F-4599-AC04-0453A997A6A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78410A07-457D-4CDD-B5BA-C2FA8C663689}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78410A07-457D-4CDD-B5BA-C2FA8C663689}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78410A07-457D-4CDD-B5BA-C2FA8C663689}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78410A07-457D-4CDD-B5BA-C2FA8C663689}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
