@@ -39,9 +39,9 @@
 			this.lblTextDecryptedResult = new System.Windows.Forms.Label();
 			this.btnEncrypt = new System.Windows.Forms.Button();
 			this.lblTextDecrypted = new System.Windows.Forms.Label();
-			this.lblTextEncryptedResult = new System.Windows.Forms.Label();
 			this.lblTextEncrypted = new System.Windows.Forms.Label();
 			this.lblTextFlat = new System.Windows.Forms.Label();
+			this.txtEncrypted = new System.Windows.Forms.TextBox();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.SuspendLayout();
@@ -107,11 +107,11 @@
 			// 
 			// groupBox2
 			// 
+			this.groupBox2.Controls.Add(this.txtEncrypted);
 			this.groupBox2.Controls.Add(this.txtFlat);
 			this.groupBox2.Controls.Add(this.lblTextDecryptedResult);
 			this.groupBox2.Controls.Add(this.btnEncrypt);
 			this.groupBox2.Controls.Add(this.lblTextDecrypted);
-			this.groupBox2.Controls.Add(this.lblTextEncryptedResult);
 			this.groupBox2.Controls.Add(this.lblTextEncrypted);
 			this.groupBox2.Controls.Add(this.lblTextFlat);
 			this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -158,14 +158,6 @@
 			this.lblTextDecrypted.TabIndex = 0;
 			this.lblTextDecrypted.Text = "Decrypted";
 			// 
-			// lblTextEncryptedResult
-			// 
-			this.lblTextEncryptedResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-			this.lblTextEncryptedResult.Location = new System.Drawing.Point(106, 45);
-			this.lblTextEncryptedResult.Name = "lblTextEncryptedResult";
-			this.lblTextEncryptedResult.Size = new System.Drawing.Size(354, 23);
-			this.lblTextEncryptedResult.TabIndex = 0;
-			// 
 			// lblTextEncrypted
 			// 
 			this.lblTextEncrypted.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -183,6 +175,15 @@
 			this.lblTextFlat.Size = new System.Drawing.Size(94, 23);
 			this.lblTextFlat.TabIndex = 0;
 			this.lblTextFlat.Text = "Flat Text";
+			// 
+			// txtEncrypted
+			// 
+			this.txtEncrypted.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+			this.txtEncrypted.Location = new System.Drawing.Point(106, 45);
+			this.txtEncrypted.Name = "txtEncrypted";
+			this.txtEncrypted.Size = new System.Drawing.Size(354, 23);
+			this.txtEncrypted.TabIndex = 4;
+			this.txtEncrypted.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtFlat_KeyDown);
 			// 
 			// Cryptography
 			// 
@@ -214,10 +215,10 @@
 		private System.Windows.Forms.TextBox txtFlat;
 		private System.Windows.Forms.Label lblTextDecryptedResult;
 		private System.Windows.Forms.Label lblTextDecrypted;
-		private System.Windows.Forms.Label lblTextEncryptedResult;
 		private System.Windows.Forms.Label lblTextEncrypted;
 		private System.Windows.Forms.Label lblTextFlat;
 		private System.Windows.Forms.Button btnEncrypt;
+		private System.Windows.Forms.TextBox txtEncrypted;
 	}
 }
 

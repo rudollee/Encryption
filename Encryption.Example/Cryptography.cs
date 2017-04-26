@@ -45,8 +45,8 @@ namespace Encryption.Example
 
 			if (this.txtFlat.Text.Length > 0)
 			{
-				this.lblTextEncryptedResult.Text = crypto.Encrypt(this.txtFlat.Text, this.KEYS[0], this.KEYS[1]);
-				this.lblTextDecryptedResult.Text = crypto.Decrypt(this.lblTextEncryptedResult.Text, this.KEYS.ElementAt(0), this.KEYS.ElementAt(1));
+				this.txtEncrypted.Text = crypto.Encrypt(this.txtFlat.Text, this.KEYS[0], this.KEYS[1]);
+				this.lblTextDecryptedResult.Text = crypto.Decrypt(this.txtEncrypted.Text, this.KEYS.ElementAt(0), this.KEYS.ElementAt(1));
 			}
 			else
 			{
