@@ -54,7 +54,7 @@ namespace Encryption
 
 				cStream.Read(fromEncrypt, 0, fromEncrypt.Length);
 
-				return new UTF8Encoding().GetString(fromEncrypt);
+				return new UTF8Encoding().GetString(fromEncrypt).Replace("\0", "");
 			}
 			catch (CryptographicException e)
 			{
